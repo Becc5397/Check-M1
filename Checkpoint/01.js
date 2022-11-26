@@ -63,7 +63,6 @@ function henryParking(arr) {
   
 }
 
-console.log(henryParking([25, 26 ,"OUT"]));
 
 
 

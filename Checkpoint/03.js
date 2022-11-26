@@ -71,18 +71,10 @@ function apilarCajas(arr) {
   if(pesoTotal > 50){
     return "No se puede crear la pila";
   }
-  console.log(pesoTotal);
   
-
   return stack;
 
 }
-
-console.log(apilarCajas([
-  { nombre: "gaseosa", peso: 40 },
-  { nombre: "arroz", peso: 5 },
-  { nombre: "otro", peso: 2 },
-]))
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {

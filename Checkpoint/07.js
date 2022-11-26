@@ -37,7 +37,7 @@ function ordenarPrecios(arr) {
     return ordenarPrecios(left).concat(equal).concat(ordenarPrecios(right))
 
 }
-console.log(ordenarPrecios([20, 15, 7, 10, 5]));
+
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   ordenarPrecios
