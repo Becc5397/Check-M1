@@ -16,8 +16,28 @@
 
 function ordenarPrecios(arr) {
     // Tu código aquí:
+    if(arr.length <= 1) return arr;
+    let pivot = arr[Math.floor(Math.random()*arr.length)];
+    let left = [];
+    let right = [];
+    let equal = [];
+    for(let i = 0; i < arr.length; i++){
+      if(arr[i] == 0){
+        return false;
+      }
+      if(arr[i] < pivot){
+        left.push(arr[i]);
+      }else if(arr[i] > pivot){
+        right.push(arr[i]);
+      }else {
+        equal.push(arr[i]);
+      }
+    }
+
+    return ordenarPrecios(left).concat(equal).concat(ordenarPrecios(right))
 
 }
+console.log(ordenarPrecios([20, 15, 7, 10, 5]));
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   ordenarPrecios

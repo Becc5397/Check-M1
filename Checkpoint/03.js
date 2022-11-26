@@ -57,7 +57,10 @@ const { Stack } = require("../DS");
 
 function apilarCajas(arr) {
   // Tu código aquí
-
+  var cajas = [];
+  const stack = new Stack();
+  thi
+  return stack.array;
 }
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
