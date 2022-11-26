@@ -73,7 +73,6 @@ function apilarCajas(arr) {
   }
   
   return stack;
-
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

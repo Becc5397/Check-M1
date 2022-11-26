@@ -36,7 +36,6 @@ BinarySearchTree.prototype.searchPrice = function (precio) {
     if(precio <= 0){
         return "Error";
     } 
-
     if(precio > this.value){
         if(!this.right){
             return false;

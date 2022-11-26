@@ -80,7 +80,6 @@ BinarySearchTree.prototype.agregarProductos = function (nombreProducto, producto
     } else {
     return "Ya existe el producto";
     };
-
 };
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

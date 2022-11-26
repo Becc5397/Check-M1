@@ -59,7 +59,6 @@
 function cobrarClientes(clientes) {
   // Tu código aquí:
   var arr = [];
-  
   while(clientes.size()){
     var client = clientes.dequeue();
     if(client.dinero > client.precioProductos) {

@@ -33,7 +33,6 @@ const calcularIndice = (n) => {
   }
 }
 
-
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   calcularIndice

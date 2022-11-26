@@ -30,7 +30,6 @@ return function ingresosHorario(arr){
     return nuevoArr;
 }
 
-
 }
 
 

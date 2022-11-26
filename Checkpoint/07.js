@@ -33,7 +33,6 @@ function ordenarPrecios(arr) {
         equal.push(arr[i]);
       }
     }
-
     return ordenarPrecios(left).concat(equal).concat(ordenarPrecios(right))
 
 }

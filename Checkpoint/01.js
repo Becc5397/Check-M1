@@ -44,7 +44,6 @@ const { Queue } = require("../DS");
 
 function henryParking(arr) {
   // Tu código aquí:
-  
   const cola = new Queue();
   for(let i = 0; i < arr.length; i++){
     

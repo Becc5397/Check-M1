@@ -44,7 +44,6 @@ function devuelveMayores(lista, valor) {
   }else{
     return contador
   }
-  
 
 }
 
