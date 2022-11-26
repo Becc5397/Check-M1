@@ -29,9 +29,11 @@
 
 function devuelveMayores(lista, valor) {
   // Tu código aquí:
-  const 
+  
+  
 
 }
+console.log(devuelveMayores(lista1, 10));
 console.log(devuelveMayores(lista1, 10));
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

@@ -19,6 +19,17 @@
 
 function ingresoEmpleado(horario) {
 // Tu código aquí:
+var nuevoArr = [];
+
+return function ingresosHorario(arr){
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].ingresoA < horario){
+            nuevoArr.push(arr[i].nombre);
+        }
+    }
+    return nuevoArr;
+}
+
 
 }
 

@@ -62,6 +62,7 @@ const { BinarySearchTree } = require("../DS");
 
 BinarySearchTree.prototype.agregarProductos = function (nombreProducto, productos) {
   // Tu código aquí:
+  
 
 };
 

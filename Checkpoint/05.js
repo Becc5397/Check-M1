@@ -58,6 +58,8 @@
 
 function cobrarClientes(clientes) {
   // Tu código aquí:
+  var nombreCli = [];
+  
  
 }
 
