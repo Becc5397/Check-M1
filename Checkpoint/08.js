@@ -21,6 +21,14 @@ const { BinarySearchTree } = require("../DS");
 
 BinarySearchTree.prototype.searchMax = function () {
   // Tu código aquí:
+  puntero = this;
+  while (puntero) {
+    if (puntero.right == null) {
+      return puntero.value;
+    }
+    puntero = puntero.right;
+  }
+  return puntero
 
 };
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

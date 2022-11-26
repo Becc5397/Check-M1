@@ -29,12 +29,24 @@
 
 function devuelveMayores(lista, valor) {
   // Tu código aquí:
-  
+  let contador = 0
+
+  let current = lista.head
+  while(current){
+    if(current.value > valor){
+      contador++
+    }
+    current = current.next
+  }
+
+  if(contador === 0){
+    return "Sin precios"
+  }else{
+    return contador
+  }
   
 
 }
-console.log(devuelveMayores(lista1, 10));
-console.log(devuelveMayores(lista1, 10));
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
