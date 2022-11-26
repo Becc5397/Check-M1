@@ -45,11 +45,27 @@ const { Queue } = require("../DS");
 function henryParking(arr) {
   // Tu código aquí:
   
+  const cola = new Queue();
+  for(let i = 0; i < arr.length; i++){
+    
+    if(arr[i] !== "OUT"){
+      cola.enqueue(arr[i]);
+    }else if(cola.size() == 0){
+      return false;
+    }else if(arr[i] == "OUT"){
+      cola.dequeue(arr[i])
+    }
+    
+  
+  }
+
+  return cola;
   
 }
 
-console.log(henryParking([23, 43, "OUT", 65]))
-;
+console.log(henryParking([25, 26 ,"OUT"]));
+
+
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
