@@ -58,10 +58,19 @@
 
 function cobrarClientes(clientes) {
   // Tu código aquí:
-  var nombreCli = [];
+  var arr = [];
   
- 
+  while(clientes.size()){
+    var client = clientes.dequeue();
+    if(client.dinero > client.precioProductos) {
+      arr.push(client.nombre);
+    } else {
+      return arr; 
+    }
+  }
+    return false;
 }
+
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {

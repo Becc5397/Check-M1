@@ -62,7 +62,24 @@ const { BinarySearchTree } = require("../DS");
 
 BinarySearchTree.prototype.agregarProductos = function (nombreProducto, productos) {
   // Tu código aquí:
-  
+  if(this.value == nombreProducto){
+    return "Ya existe el producto";
+    }
+      if(100 > productos[nombreProducto]){
+      if(!this.left){
+        return this.left = new BinarySearchTree(nombreProducto);
+      } return this.left.agregarProductos(nombreProducto,productos);
+    }
+    if(100 < productos[nombreProducto]){
+      if(!this.right){
+        return this.right = new BinarySearchTree(nombreProducto);
+      } return this.right.agregarProductos(nombreProducto,productos);
+    }
+    if(!productos.hasOwnProperty(nombreProducto)){ 
+      return "Producto inexistente";
+    } else {
+    return "Ya existe el producto";
+    };
 
 };
 
